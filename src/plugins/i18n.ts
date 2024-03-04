@@ -4,17 +4,21 @@ import common from '../common/i18n';
 
 const messages = {
     en: {
-        translations: common.en,
+        translation: common.en,
     },
     ja: {
-        translations: common.ja,
+        translation: common.ja,
+    },
+    vi: {
+        translation: common.vi,
     },
 };
+
+console.log('messages: ', messages);
 
 i18next.use(initReactI18next).init({
     fallbackLng: 'en',
     lng: 'en',
-    ns: 'translations',
     debug: false,
     resources: messages,
     compatibilityJSON: 'v3',

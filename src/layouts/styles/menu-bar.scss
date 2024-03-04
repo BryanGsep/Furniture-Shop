@@ -1,0 +1,39 @@
+@import './../../common/styles/variables.scss';
+
+.toolbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.logo_container {
+    display: flex;
+    .logo_img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .app_name {
+        color: $navy-blue;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.button-container {
+    display: flex;
+    margin: 0 3rem;
+    gap: 0.5rem;
+    .button-icon {
+        color: black;
+        font-size: 0.7rem;
+        min-width: 4rem;
+        &.selected {
+            font-weight: 600;
+            color: white;
+            background-color: $pantone-blue;
+        }
+    }
+}
